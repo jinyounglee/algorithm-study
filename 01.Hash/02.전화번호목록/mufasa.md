@@ -8,7 +8,7 @@ class Solution {
         int bookLength = phone_book.length;
         for(int i=0;i<bookLength;i++){
             String phone1 = phone_book[i];
-            for(int j=(i+1);j<phone_book.length;j++) {
+            for(int j=(i+1);j<bookLength;j++) {
                 if(phone_book[j].indexOf(phone1) == 0) {
                     answer = false;
                     break;
