@@ -1,6 +1,18 @@
 ```python
 
-'''파이썬 코드를 적어주세요. 이렇게 하면 파이썬 문법에 맞게 코드를 예쁘게 보여줍니다.'''
+def solution(participant, completion):
+    answer = ''
+    participant.sort()
+    completion.sort()
+    completion.append("n")
+    n = 0
+    for i in participant:
+        if  i == completion[n]:
+            n += 1
+            continue
+        answer = participant[n]
+
+    return answer
 
 ```
 
